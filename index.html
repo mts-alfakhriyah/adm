@@ -84,15 +84,15 @@
     <!-- ==================== LOGIN VIEW ==================== -->
     <div id="view-login" class="flex-1 w-full flex h-full hidden-view bg-white">
         <!-- Left Side -->
-        <div class="hidden md:flex md:w-2/2 bg-gradient-to-br from-slate-900 via-secondary to-indigo-950 text-white flex-col items-center justify-center p-12 text-center relative overflow-hidden">
+        <div class="hidden md:flex md:w-1/2 bg-gradient-to-br from-slate-900 via-secondary to-indigo-950 text-white flex-col items-center justify-center p-12 text-center relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
                 <div class="absolute -top-20 -left-20 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
                 <div class="absolute top-40 -right-20 w-96 h-96 bg-accent rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
             </div>
             
-            <img id="login-logo-preview" src="https://placehold.co/150x150/4f46e5/ffffff?text=Logo" onerror="this.src='https://placehold.co/150x150/4f46e5/ffffff?text=Logo'" alt="Logo" class="w-36 h-36 z-10 mb-8 object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+            <img id="login-logo-preview" src="https://placehold.co/150x150/4f46e5/ffffff?text=Logo" onerror="this.src='https://placehold.co/150x150/4f46e5/ffffff?text=Logo'" alt="Logo" class="w-36 h-36 z-10 mb-8 object-contain border-0 border-white/300 drop-shadow-2xl hover:scale-105 transition-transform duration-500">
             <h1 class="text-4xl font-bold z-10 mb-2 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-200">PORTAL ABSENSI GURU</h1>
-            <p class="text-2xl font-bold z-10 mb-8 tracking-wide login-school-name text-accent">NAMA MADRASAH</p>
+            <p class="text-3xl font-bold z-10 mb-8 tracking-wide login-school-name text-accent">NAMA MADRASAH</p>
             <p class="text-base z-10 text-slate-300 max-w-md font-light">Platform digital terpadu untuk efisiensi pemantauan kehadiran dan kedisiplinan guru.</p>
         </div>
 
@@ -103,7 +103,7 @@
                 <div class="md:hidden text-center mb-10">
                     <img id="mobile-login-logo-preview" src="https://placehold.co/100x100/4f46e5/ffffff?text=Logo" alt="Logo" class="w-24 h-24 mx-auto mb-5 object-contain drop-shadow-lg">
                     <h2 class="text-2xl font-bold text-slate-800 tracking-tight">PORTAL ABSENSI GURU</h2>
-                    <p class="text-lg font-semibold text-primary mb 10 login-school-name">NAMA MADRASAH</p>
+                    <p class="text-xl font-semibold text-primary mb 10 login-school-name">NAMA MADRASAH</p>
                 </div>
 
                 <h2 class="text-xl font-black mb-1 text-slate-800">Masuk Sebagai</h2>
@@ -116,7 +116,7 @@
                 <form id="form-login-teacher" class="space-y-5" onsubmit="handleLogin(event, 'teacher')">
                     <div class="floating-input">
                         <input type="text" id="login-nuptk" required class="w-full rounded-xl bg-slate-50 transition-colors" placeholder=" ">
-                        <label>NUPTK / PEG ID</label>
+                        <label>NUPTK/PEG ID</label>
                     </div>
                     <div class="floating-input relative">
                         <input type="password" id="login-guru-password" required class="w-full rounded-xl bg-slate-50 transition-colors" placeholder=" ">
